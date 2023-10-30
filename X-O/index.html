@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <main class="container visible" id="container">
+        <div class="carre" id="carre0"></div>
+    <div class="carre " id="carre1"></div>
+    <div class="carre " id="carre2"></div>
+    <div class="carre" id="carre3"></div>
+    <div class="carre" id="carre4"></div>
+    <div class="carre" id="carre5"></div>
+    <div class="carre" id="carre6"></div>
+    <div class="carre" id="carre7"></div>
+    <div class="carre" id="carre8"></div>
+    </main>
+    <main class="playerWinOrLose visible" id="winOrLose">
+        <div class="containerPlayer">
+            <h1 id="playerWin"></h1>
+        <div class="restartGame">
+            <h1>New Game</h1>
+            <div class="buttonRestartGeme">
+                <button type="button" id="restar-yes">YES</button>
+                <button type="button" id="restar-no">NO</button>
+            </div>
+        </div>
+        </div>
+    </main>
+    <main class="point visible" id="point">
+        <span id="player-one-point">0</span>
+        <span>-</span>
+        <span id="player-two-point">0</span>
+    </main>
+    <div class="backdrop visible" id="backdrop"></div>
+    <main class="endparty visible" id="endparty">
+
+        <h1>Player <span id="end-winner"></span>Win</h1>
+        <img src="/304838-ffc107.svg" alt="">
+        <button id="restart-game">RESTART THE GAME</button>
+
+    </main>
+    <main id="start-menu" class="start-menu">
+        <h1>X - O</h1>
+        <h2 >START NEW GAME :</button>
+        <div class="choose" id="choose-mod-game">
+            <button id="cmpMode">1 VS Computer</button>
+            <button id="playerMode">1 VS 1</button>
+        </div>
+    </main>
+</body>
+</html>

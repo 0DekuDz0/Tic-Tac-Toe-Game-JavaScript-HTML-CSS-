@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    width: 50vw;
+    height: 50vw;
+}
+
+.container.visible{
+    display: none;
+}
+
+.carre{
+    background-color: #EEF8FF;
+    border: 3px solid black;
+    width: 33%;
+    height: 33%;
+}
+
+.x::after{
+    display: flex;
+    content: 'X';
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: blue;
+}
+
+.o::after{
+    display: flex;
+    content: 'O';
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: red;
+}
+
+#carre0,
+#carre3,
+#carre6{
+    border-left: none;
+}
+
+#carre2,
+#carre5,
+#carre8{
+    border-right: none;
+}
+
+#carre0,
+#carre1,
+#carre2{
+    border-top: none;
+}
+
+#carre6,
+#carre7,
+#carre8{
+    border-bottom: none;
+}
+
+.playerWinOrLose{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3;
+    background-color: #FFF5EE;
+    box-shadow: 10px 10px 5px 0px rgba(212,205,205,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(212,205,205,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(212,205,205,0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.playerWinOrLose.visible{
+    display: none;
+}
+
+.backdrop{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.359);
+    position: absolute;
+    pointer-events: all;
+    z-index: 1;
+
+}
+
+.backdrop.visible{
+    pointer-events: none;
+    display: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.restartGame{
+   margin-top: 5rem;
+} 
+
+
+.start-menu button,
+#gift,
+.endparty #restart-game,
+.restartGame button{
+    margin: 1rem;
+    width: 5rem;
+    background-color: black;
+    color: white;
+}
+
+.playerWinOrLose .containerPlayer{
+    padding: 5rem;
+}
+
+.point{
+    position: absolute;
+    top: 5rem;
+    left: 0.5rem;
+    font-size: 5rem;
+    background-color: #EEF8FF;
+    padding: 3rem;
+}
+
+.point.visible{
+    display: none;
+}
+
+#player-one-point{
+    color: blue;
+}
+
+#player-two-point{
+    color: red;
+}
+
+.endparty{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.endparty.visible{
+    display: none;
+}
+
+.endparty img{
+    width: 50%;
+}
+
+.red{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
+
+.gift-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%,-50%);
+    
+}
+
+.gift-img.visible{
+    display: none;
+}
+
+
+.start-menu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%,-50%);
+    background-color: #EEF8FF;
+    padding: 5rem;
+    box-shadow: 10px 10px 5px 0px rgba(176,168,168,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(176,168,168,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(176,168,168,0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.start-menu h1{
+    margin-bottom: 1rem;
+
+}
+
+.start-menu button{
+    margin: 1rem;
+    width: 6.5rem;
+}
+
+.start-menu.visible{
+    display: none;
+}
